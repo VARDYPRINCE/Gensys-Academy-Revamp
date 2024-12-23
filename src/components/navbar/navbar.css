@@ -1,0 +1,100 @@
+.navwrapper {
+  padding: 30px 100px 5px 100px;
+  box-shadow: 0px 0px 0.8px rgba(0, 0, 0.01);
+  background-color: #ffffff;
+  height: 101px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.navroute {
+  all: unset;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: sticky; */
+}
+.nav_paths {
+  display: flex;
+  gap: 30px;
+  color: #596275;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Avenir LT Pro";
+}
+.nav {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  justify-content: space-evenly;
+}
+.ln {
+  border: 1px solid #000000;
+  height: 40px;
+  margin-left: 8px;
+  margin-right: 2px;
+}
+.nav_academy {
+  color: #273043;
+  font-family: "Avenir LT Pro";
+  font-size: 22px;
+  font-weight: 400;
+}
+.navbtn {
+  border: none;
+  width: 181px;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #f5772f;
+  font-family: "Avenir LT Pro";
+}
+.navbtn:hover {
+  background-color: #ff9e66;
+  cursor: pointer;
+}
+.navbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.arrowicon {
+  color: white;
+}
+.nav_academy {
+  font-family: "Avenir LT Pro";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+.navlinktags {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navlinktags,
+.navlinktags:visited,
+.navlinktags:hover,
+.navlinktags:active {
+  text-decoration: none;
+  color: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+.navlinktags:hover {
+  color: #ff9e66;
+}
+.tyf {
+  font-family: "Avenir LT Pro";
+  font-size: 14px;
+  font-weight: 200;
+}

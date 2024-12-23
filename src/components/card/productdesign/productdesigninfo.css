@@ -1,0 +1,145 @@
+.pdchild {
+  padding: 20px 100px 5px 100px;
+  margin-top: 120px;
+}
+.productdesignersinfomation {
+  display: flex;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 20px 100px 70px 100px;
+  gap: 32px;
+  justify-content: center;
+}
+.productdesignersinfomation1 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: center;
+  width: 731px;
+  height: 319px;
+  gap: 32px;
+}
+.abtpathwayspd {
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+}
+.propddesigns {
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #596275;
+}
+.propddesigns2 {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.pdchildsecond {
+  padding: 70px 100px 100px 100px;
+  background: #e13f290d;
+}
+#pdchildsecondnew{
+  background: #33D1BA0D;
+}
+#datanewbgcolor{
+  background: #EAC4350D;  
+}
+.pdchildsecond {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.wylearn {
+  font-family: "Avenir LT Pro";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+  margin-bottom: 30px;
+  color: #273043;
+}
+.dottedwyl {
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #596275;
+}
+.requirements-section,
+.learn-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.li-section {
+  padding-bottom: 10px;
+}
+#widthlearn {
+  width: 610px;
+  height: 240px;
+}
+.currydesign {
+  display: flex;
+  justify-content: flex-end;
+}
+.curryinfos {
+  padding: 20px 100px 105px 100px;
+  background-color: #ffffff;
+}
+.curriculum-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 9px;
+  align-items: center;
+}
+.curryheaders {
+  padding: 10px 100px 10px 100px;
+}
+.currycuryy {
+  color: #273043;
+  font-family: "Avenir LT Pro";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+.currycuryy2 {
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.currydec {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.deccurry::marker {
+  color: #e13f29;
+}
+#newnndecurry::marker {
+color: #33D1BA;
+}
+#newdecurry::marker{
+  color: #176CFF;
+}
+.otherpathwayspds {
+  padding: 30px 100px 105px 100px;
+}
+.otherpathwayspds1 {
+  font-family: " Avenir LT Pro";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+  margin-bottom:40px;
+}
+.calledimportescards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#newbebackcolor{
+  background: #176CFF0D;
+
+}
