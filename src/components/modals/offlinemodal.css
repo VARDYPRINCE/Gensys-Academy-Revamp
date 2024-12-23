@@ -1,0 +1,137 @@
+.pay-background {
+  background-color: grey;
+  width: 650px;
+  height: 700px;
+  padding: 25px 30px;
+}
+
+.pay-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.closer {
+  width: 30px;
+  height: 30px;
+  color: #b1b1b1;
+  cursor: pointer;
+}
+.subhead {
+  color: #596275;
+  font-family: "Avenir LT Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.pay-fields {
+  margin: 50px 0px;
+}
+.forms {
+  line-height: 40px;
+}
+.labelupdated {
+  color: #273043;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 10px;
+}
+.inputss {
+  width: 580px;
+  height: 60px;
+  padding: 25px 20px 25px 20px;
+  gap: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 1px solid #b1b1b1;
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b1b1b1;
+  outline: none;
+}
+.email {
+  margin-top: 10px;
+}
+.receipt {
+  margin-top: 10px;
+}
+.choose {
+  border: 1px dashed #b1b1b1;
+  width: 600px;
+  height: 188px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 20px;
+}
+.cloud {
+  width: 52px;
+  height: 52px;
+  color: #d0d0d0;
+}
+.choose p {
+  font-size: 14px;
+  color: #596275;
+}
+.choose span {
+  color: #f5772f;
+}
+.file {
+  margin-left: 10%;
+}
+
+.dynamic-btn {
+  width: 270px;
+  height: 56px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #f5772f;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.dynamicbtn{
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  align-items: center;
+}
+.dynamic-btn:hover {
+  background-color: #ff9e66;
+}
+.pay-text-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Basic styling to make the modal cover the entire screen */
+.pay-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the screen */
+  height: 100%; /* Full height of the screen */
+  background-color: rgba(49, 49, 49, 0.8);
+  display: flex; /* Flexbox for centering the modal content */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.payment-details {
+  background-color: #fff;
+  padding: 30px 30px 0px 30px;
+  border-radius: 20px;
+}
+.cpmodalheader {
+  font-family: "Avenir LT Pro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #273043;
+}

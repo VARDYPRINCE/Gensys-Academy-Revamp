@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+.personaldatawrapper {
+  background: #fafafa;
+}
+.pagnition {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px 10px 100px;
+}
+.pdpad {
+  padding: 15px 100px 10px 100px;
+}
+.pdspaceinfo {
+  padding-bottom: 15px;
+}
+.pinfo {
+  width: 344px;
+  height: 43px;
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+}
+.aboutselfinfo {
+  width: 244px;
+  height: 24px;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.no_1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+}
+.horizontal {
+  display: flex;
+  height: 100px;
+  border: 0.5px solid #f5772f;
+}
+.startpersonal {
+  display: flex;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+  border: 1.5px solid #f5772f;
+  background-color: #fafafa;
+  cursor: pointer;
+  align-items: center;
+  color: #f5772f;
+  transition: transform 0.3s ease-in-out;
+}
+.startpersonal:hover {
+  color: #fff;
+  background-color: #ff9e66;
+  transform: scale(0.9);
+}
+.personaldatapd {
+  font-family: "Avenir LT Pro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #f5772f;
+}
+/* ---kmk */
+.pagnition1.active,
+.pagnition2.active {
+  border-radius: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: #ff9659;
+}
+.pagnition1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagnationjr1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 35px;
+}
+.formwrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.pinfofn {
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 8px
+}
+.selectinfo {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  width: 580px;
+  padding: 25px 20px 25px 20px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px;
+  border: 1px solid #b1b1b1;
+  outline: none;
+  cursor: pointer;
+}
+.personal-data-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.btninformationsentence {
+  display: flex;
+  height: 100px;
+  justify-content: flex-end;
+  width: 580px;
+  align-items: last baseline;
+}
+.btnsubmitinfo {
+  width: 200px;
+  height: 52px;
+  padding: 15px 16px 15px 16px;
+  gap: 8px;
+  border-radius: 10px;
+  background-color: #f5772f;
+  color: #ffffff;
+  border: none;
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.btnsubmitinfo:hover{
+    transform:scale(0.9);
+    border: 3px solid  #F5772F ;
+    color: #F5772F;
+    background-color:#FF9659;
+}
+

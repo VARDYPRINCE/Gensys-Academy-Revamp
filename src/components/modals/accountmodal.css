@@ -1,0 +1,57 @@
+.dyn-button {
+  width: 160px;
+  height: 48px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #f5772f;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.homepagebtnacct{
+  width: 100%;
+  text-align: center;
+}
+.dyn-button:hover {
+  background-color: #ff9e66;
+}
+
+.acctnumber {
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(49, 49, 49, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+.account-background {
+  width: 391px;
+  height: 377px;
+  top: 6105px;
+  left: 8461px;
+  padding: 30px;
+  gap: 28px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.account-head {
+  display: flex;
+  justify-content: space-between;
+}
+.account-text{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 20px;
+}

@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainLanding from "./pages/firstscreen/MainLanding";
+import Layoutforlanding from "./pages/firstscreen/Layoutforlanding";
+import ContactUs from "./pages/firstscreen/ContactUs";
+import Faqs from "./components/faq/Faqs";
+import Personaldata from "./pages/secondscreen/Personaldata";
+import Productdesigninfo from "./components/card/productdesign/Productdesigninfo";
+import FrontEndinformation from "./components/card/frontend/FrontEndInformation";
+import Qualityassuranceinfo from "./components/card/qualityassurance/Qualityassuranceinfo";
+import Dataanalysisinfo from "./components/card/dataanalysis/Dataanalysisinfo";
+import Backendinfo from "./components/card/backendcarddata/Backendinfo";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <React.Fragment>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLanding />} />
 
-export default App
+          <Route path="/productdesign" element={<Productdesigninfo />} />
+          <Route path="/frontend" element={<FrontEndinformation />} />
+          <Route path="/qa" element={<Qualityassuranceinfo />} />
+          <Route path="/dataanlysis" element={<Dataanalysisinfo />} />
+          <Route path="/backend" element={<Backendinfo />} />
+
+          <Route path="/personaldata" element={<Personaldata />} />
+
+          <Route path="/" element={<Layoutforlanding />}>
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/faqs" element={<Faqs />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </React.Fragment>
+  );
+};
+
+export default App;

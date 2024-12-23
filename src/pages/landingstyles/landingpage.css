@@ -1,0 +1,681 @@
+.landingptn {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 150px 0px;
+}
+.landingPagewrapper {
+  padding-bottom: 20px;
+}
+.landingptntheader {
+  font-family: "Avenir LT Pro";
+  font-size: 46px;
+  font-weight: 700;
+  padding: 0px 100px;
+}
+.landingptnttxt {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 20px 100px;
+}
+.landingbtn {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0px 100px;
+}
+.landingbtn-1 {
+  background-color: #f5772f;
+  padding: 15px 20px;
+  gap: 8px;
+  border-radius: 10px;
+  color: #ffff;
+  border: none;
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.landingbtn-1:hover {
+  background-color: #ff9e66;
+  transform: scale(1);
+}
+.landingbtn-2 {
+  color: #f5772f;
+  padding: 15px 20px;
+  gap: 8px;
+  border-radius: 10px;
+  background-color: #ffff;
+  border: 1px solid #f5772f;
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.landingbtn-2:hover {
+  background-color: #ff9e66;
+  border: none;
+  color: white;
+  transform: scale(1);
+}
+.landingptn2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.group10 {
+  position: absolute;
+  top: -10%;
+  right: 9%;
+}
+.oj {
+  position: absolute;
+  top: 11%;
+  left: 15%;
+}
+.mrcharles {
+  position: relative;
+  top: 15%;
+  left: 20%;
+}
+.bella {
+  position: relative;
+  top: -6%;
+  right: 60%;
+  z-index: 2;
+}
+.group6 {
+  position: relative;
+  top: 45%;
+}
+.progress {
+  position: relative;
+  top: -4%;
+  left: 43%;
+}
+.eclipse {
+  position: relative;
+  top: -1%;
+  left: 9%;
+}
+/* -----who component---- */
+.who_wrapper {
+  background-color: #ffc8a805;
+  padding: 50px 0px 50px 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 8px;
+}
+.whoimage1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.design1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  margin-top: 50px;
+}
+.whoimage2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prince {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  width: 522px;
+}
+.design2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+.whotxtwrapper {
+  width: 449px;
+  height: 235px;
+}
+.whotxt {
+  color: #273043;
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  padding-bottom: 20px;
+}
+.whotxt1,
+.whotxt2 {
+  color: #596275;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.vectorwhoweare {
+  display: flex;
+  justify-content: flex-end;
+}
+/* pathway component */
+.pathwaywrapper {
+  padding: 50px 100px;
+}
+.pathwaytxt {
+  color: #596275;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  width: 750px;
+}
+.pathwayheader {
+  color: #273043;
+  font-family: Avenir LT Pro;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: center;
+}
+.pathway {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 115px;
+  gap: 24px;
+}
+.cardscalled {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 35px;
+}
+.testinfcards {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 35px;
+}
+/* why we standout */
+.standoutheader {
+  text-align: center;
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  padding-bottom: 40px;
+}
+.floated2 {
+  width: 70px;
+}
+.firststandoutwrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.satnding11 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Avenir LT Pro";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: #273043;
+}
+.standngtxt {
+  color: #596275;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.stanoutwid {
+  width: 600px;
+  height: 123.12px;
+}
+.standoutwrapper {
+  padding-right: 100px;
+}
+#bottomstand {
+  padding-top: 50px;
+}
+/* past  */
+.pastwrapper {
+  padding: 50px 100px;
+}
+.pastit {
+  padding: 50px 0px;
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: center;
+}
+.pastptn1 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 120px;
+  align-items: center;
+}
+.pasttxext {
+  border: 0.5px solid #f5772f80;
+  padding: 30px 30px;
+  background-color: #ffff;
+  border-radius: 20px;
+  width: 493px;
+  height: 166px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.pastfloate1 {
+  position: absolute;
+  top: 552%;
+  left: 55%;
+}
+.pastfloate2 {
+  position: absolute;
+  top: 570%;
+  left: 87%;
+}
+.pastfloate0 {
+  position: absolute;
+  top: 622%;
+  left: 39%;
+}
+.pastfloate5 {
+  position: absolute;
+  top: 602%;
+  left: 8%;
+}
+/* ---testimony---  */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 50px 150px;
+}
+.testiment {
+  font-family: " Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  background-color: #fafafa;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.testimonial {
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #f5772f;
+  background-color: #ffc4a21a;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  border-radius: 20px;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 665%;
+  left: 46.5%;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0px 100px;
+}
+
+.prev-btn {
+  position: absolute;
+  left: 10px;
+}
+
+.next-btn {
+  position: absolute;
+  right: 10px;
+}
+
+.carol {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0px 50px;
+  max-width: 640px;
+  height: 180px;
+}
+.imgcenter {
+  padding-top: 70px;
+}
+.testimonyname {
+  font-family: "Avenir LT Pro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+.testimonttitles {
+  font-family: "Avenir LT Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+/* --cohort---  */
+.jtnc {
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: center;
+}
+.cohortwrapper {
+  padding: 50px 100px;
+}
+.gridcohort {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+.applyon {
+  color: #333333;
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+}
+.gridcohort2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.appltxt {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0px 20px 0px 0px;
+  width: 500px;
+  color: #696969;
+}
+.btncohortwrapper {
+  border: none;
+  background-color: #f5772f;
+  width: 142px;
+  height: 48px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px;
+  color: #ffff;
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btncohortwrapper:hover {
+  background-color: #ff9e66;
+}
+/* ---connected---    */
+.subscription-container {
+  padding: 70px 100px;
+  padding-bottom: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.connected {
+  display: contents;
+}
+.connect {
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: center;
+  color: #273043;
+}
+.connect2 {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #596275;
+}
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.subform {
+  width: 550px;
+  height: 52px;
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
+  border-radius: 10px 0px 0px 10px;
+  border: 0.5px 0px 0.5px 0.5px;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #596275;
+  /* color: #b4b4b4; */
+  outline: #596275;
+}
+.subscribebtn {
+  color: #ffffff;
+  width: 146px;
+  height: 52px;
+  padding: 15px 30px 15px 30px;
+  gap: 8px;
+  background: #f5772f;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.subscribebtn:hover {
+  background: #ff9e66;
+}
+.success-message {
+  font-family: "Avenir LT Pro";
+  text-align: center;
+  color: #596275;
+}
+/* ---layout----  */
+.widthimg {
+  width: 100%;
+}
+/* ---contact us---  */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  /* border: 1px solid red; */
+  padding: 70px 100px;
+  align-items: center;
+}
+.form-section {
+  width: 60%;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+} */
+
+.cuipbox {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+  width: 580px;
+  height: 60px;
+  padding: 25px 20px 25px 20px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  outline: none;
+}
+
+.cstextarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 580px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+}
+
+.cstextarea {
+  height: 100px;
+}
+
+.submit-btn {
+  width: 130px;
+  height: 54px;
+  padding: 15px 30px 15px 30px;
+  gap: 8px;
+  border-radius: 10px;
+  opacity: 0px;
+  background: #f5772f;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.submit-btn:hover {
+  background-color: #d8431b;
+}
+
+.csh2 {
+  margin-bottom: 1px;
+  font-family: "Avenir LT Pro";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.2px;
+}
+.pcusa {
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 650px;
+  height: 48px;
+}
+.fncu {
+  font-family: " Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.csh3 {
+  margin-top: 20px;
+}
+.ptnlocation1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  width: 500px;
+}
+.loacte {
+  font-family: "Avenir LT Pro";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #273043;
+  margin-bottom: 20px;
+}
+.kilometer {
+  color: #596275;
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact-details {
+  margin-top: 80px;
+  /* border: 1px solid red; */
+  /* height: 340; */
+}
+.contact-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 120px 100px;
+}
+.retry_ptn {
+  display: flex;
+  gap: 10px;
+}
+.firstContactline {
+  border: 1px solid #f5772f;
+}
+.bhours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bhtxt {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.bhending {
+  font-family: "Avenir LT Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* --personaldata--- */
