@@ -5,7 +5,7 @@ import { useState } from "react";
 import one from "../../assets/images/1.png";
 import two from "../../assets/images/2.png";
 import infoeclipse from "../../assets/images/Ellipse 3.png";
-import PaymentModal from "../../components/modals/PaymentModal"; 
+import PaymentModal from "../../components/modals/PaymentModal";
 
 interface FormData {
   firstName: string;
@@ -30,7 +30,7 @@ const Personaldata = () => {
 
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [showModal, setShowModal] = useState(false); 
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -64,11 +64,10 @@ const Personaldata = () => {
       !howDidYouHear
     ) {
       setErrorMessage("Please fill in all fields before submitting.");
-      return; 
+      return;
     }
 
     setErrorMessage("");
-
 
     setShowModal(true);
   };
@@ -94,15 +93,15 @@ const Personaldata = () => {
           <FontAwesomeIcon icon={faArrowLeft} className="farrowleft" />
         </button>
         <div className="no_1">
-          <div className="personaldatapd">Personal Data</div>
+          <h1 className="personaldatapd">Personal Data</h1>
           <hr className="horizontal" />
-          <div className={`pagnition1 ${currentPage === 1 ? "active" : ""}`}>
+          <figure className={`pagnition1 ${currentPage === 1 ? "active" : ""}`}>
             <img src={one} alt="" className="pagnationjr1" />
-          </div>
+          </figure>
 
-          <div className={`pagnition1 ${currentPage === 2 ? "active" : ""}`}>
+          <figure className={`pagnition1 ${currentPage === 2 ? "active" : ""}`}>
             <img src={two} alt="" className="pagnationjr1" />
-          </div>
+          </figure>
         </div>
       </div>
 
@@ -110,10 +109,8 @@ const Personaldata = () => {
         <div>
           <div className="pdpad">
             <div className="pdspaceinfo">
-              <div className="pinfo">Personal Information</div>
-              <div className="aboutselfinfo">
-                Tell us a little about yourself.
-              </div>
+              <h2 className="pinfo">Personal Information</h2>
+              <p className="aboutselfinfo">Tell us a little about yourself.</p>
             </div>
             <div className="formwrapper">
               <form onSubmit={handlePageSubmit} className="personal-data-form">
@@ -233,14 +230,7 @@ const Personaldata = () => {
           </div>
         </div>
       )}
-
-      {/* Daniel Payment modal Content
-      {showModal && (
-        <PaymentModal onSuccess={handlePaymentSuccess} />
-      )} */}
-
       {showModal && <PaymentModal onClose={() => setShowModal(false)} />}
-
       {currentPage === 2 && (
         <div>
           <h2>Payment Successful</h2>

@@ -96,30 +96,35 @@ const testimonials: React.FC = () => {
   }, [currentIndex]);
 
   return (
-    <div className="new_wrapper" id="testimony">
-      <div className="testiment">Testimonies of past interns</div>
+    <section className="new_wrapper" id="testimony">
+      <h2 className="testiment">Testimonies of Past Interns</h2>
+
       <div className="carousel">
-        <button className="carousel-btn prev-btn" onClick={prevSlide}>
+        <button
+          className="carousel-btn prev-btn"
+          onClick={prevSlide}
+          aria-label="Previous testimonial"
+        >
           ❮
         </button>
 
-        <div className="testimonial">
+        <article className="testimonial">
           <div className="imgcenter">
-            <div className="testimonyname">
-              {testimonial[currentIndex].name}
-            </div>
-            <div className="testimonttitles">
-              {testimonial[currentIndex].title}
-            </div>
+            <h3 className="testimonyname">{testimonial[currentIndex].name}</h3>
+            <p className="testimonttitles">{testimonial[currentIndex].title}</p>
           </div>
-          <div className="carol">{testimonial[currentIndex].text}</div>
-        </div>
+          <p className="carol">{testimonial[currentIndex].text}</p>
+        </article>
 
-        <button className="carousel-btn next-btn" onClick={nextSlide}>
+        <button
+          className="carousel-btn next-btn"
+          onClick={nextSlide}
+          aria-label="Next testimonial"
+        >
           ❯
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

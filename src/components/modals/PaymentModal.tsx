@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./modal.css";
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import Invoicemodal from "./Invoicemodal"; 
+import Invoicemodal from "./Invoicemodal";
 
 const PaymentModal = ({ onClose }: { onClose: () => void }) => {
   const [activeOption, setActiveOption] = useState("");
@@ -13,7 +13,6 @@ const PaymentModal = ({ onClose }: { onClose: () => void }) => {
     setButtonContent(content);
   };
 
-
   const handleButtonClick = () => {
     if (activeOption === "offline") {
       setShowInvoiceModal(true);
@@ -24,20 +23,19 @@ const PaymentModal = ({ onClose }: { onClose: () => void }) => {
     <>
       {!showInvoiceModal ? (
         <div className="payment-background">
-          <div className="payment-modal">
-            <div className="head-text">
+          <section className="payment-modal">
+            <header className="head-text">
               <h4 className="headpayment">Payment Options</h4>
-              <IoIosCloseCircleOutline
-                className="close"
-                onClick={onClose} 
-              />
-            </div>
+              <IoIosCloseCircleOutline className="close" onClick={onClose} />
+            </header>
             <div className="options">
               <div
-                className={`full-pay ${activeOption === "full" ? "active" : ""}`}
+                className={`full-pay ${
+                  activeOption === "full" ? "active" : ""
+                }`}
                 onClick={() => handleOptionChange("full", "Make Payment")}
               >
-                <div className="full-pay">
+                <label htmlFor="full" className="full-pay">
                   <input
                     type="radio"
                     id="full"
@@ -45,20 +43,26 @@ const PaymentModal = ({ onClose }: { onClose: () => void }) => {
                     value="full payment"
                     className="radio"
                     checked={activeOption === "full"}
-                    onChange={() => handleOptionChange("full", "Pay 550,000 Now")}
+                    onChange={() =>
+                      handleOptionChange("full", "Pay 550,000 Now")
+                    }
                   />
                   <div className="fullpay-text">
                     <p className="top">Full Payment</p>
                     <p className="down">550,000</p>
                   </div>
-                </div>
+                </label>
               </div>
 
               <div
-                className={`full-pay ${activeOption === "offline" ? "active" : ""}`}
-                onClick={() => handleOptionChange("offline", "Generate Invoice")}
+                className={`full-pay ${
+                  activeOption === "offline" ? "active" : ""
+                }`}
+                onClick={() =>
+                  handleOptionChange("offline", "Generate Invoice")
+                }
               >
-                <div className="full-pay">
+                <label htmlFor="offline" className="full-pay">
                   <input
                     type="radio"
                     id="offline"
@@ -66,20 +70,26 @@ const PaymentModal = ({ onClose }: { onClose: () => void }) => {
                     value="offline payment"
                     className="radio"
                     checked={activeOption === "offline"}
-                    onChange={() => handleOptionChange("offline", "Generate Invoice")}
+                    onChange={() =>
+                      handleOptionChange("offline", "Generate Invoice")
+                    }
                   />
                   <div className="fullpay-text">
                     <p className="top">Offline Payment</p>
                     <p className="down">Generate Invoice</p>
                   </div>
-                </div>
+                </label>
               </div>
 
               <div
-                className={`full-pay ${activeOption === "installment" ? "active" : ""}`}
-                onClick={() => handleOptionChange("installment", "Make Payment")}
+                className={`full-pay ${
+                  activeOption === "installment" ? "active" : ""
+                }`}
+                onClick={() =>
+                  handleOptionChange("installment", "Make Payment")
+                }
               >
-                <div className="full-pay">
+                <label htmlFor="installment" className="full-pay">
                   <input
                     type="radio"
                     id="installment"
@@ -87,20 +97,29 @@ const PaymentModal = ({ onClose }: { onClose: () => void }) => {
                     value="First installment"
                     className="radio"
                     checked={activeOption === "installment"}
-                    onChange={() => handleOptionChange("installment", "Pay First Installment (330,000)")}
+                    onChange={() =>
+                      handleOptionChange(
+                        "installment",
+                        "Pay First Installment (330,000)"
+                      )
+                    }
                   />
                   <div className="fullpay-text">
                     <p className="top">60% First Installment</p>
                     <p className="down">330,000</p>
                   </div>
-                </div>
+                </label>
               </div>
 
               <div
-                className={`full-pay ${activeOption === "small" ? "active" : ""}`}
-                onClick={() => handleOptionChange("small", "Start Pay Small Small")}
+                className={`full-pay ${
+                  activeOption === "small" ? "active" : ""
+                }`}
+                onClick={() =>
+                  handleOptionChange("small", "Start Pay Small Small")
+                }
               >
-                <div className="full-pay">
+                <label htmlFor="small" className="full-pay">
                   <input
                     type="radio"
                     id="small"
@@ -108,23 +127,28 @@ const PaymentModal = ({ onClose }: { onClose: () => void }) => {
                     value="small payment"
                     className="radio"
                     checked={activeOption === "small"}
-                    onChange={() => handleOptionChange("small", "Spread Payment Plan")}
+                    onChange={() =>
+                      handleOptionChange("small", "Spread Payment Plan")
+                    }
                   />
                   <div className="fullpay-text">
                     <p className="top">Pay Small Small</p>
                     <p className="down">Spread Payment</p>
                   </div>
-                </div>
+                </label>
               </div>
 
-              <button className="dynamic-button" onClick={handleButtonClick}>
+              <button
+                type="button"
+                className="dynamic-button"
+                onClick={handleButtonClick}
+              >
                 {buttonContent}
               </button>
             </div>
-          </div>
+          </section>
         </div>
       ) : (
- 
         <Invoicemodal onClose={onClose} />
       )}
     </>
@@ -132,4 +156,3 @@ const PaymentModal = ({ onClose }: { onClose: () => void }) => {
 };
 
 export default PaymentModal;
-

@@ -2,10 +2,10 @@ import { useState } from "react";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { MdOutlineContentCopy } from "react-icons/md";
 import "./invoicemodal.css";
-import Accountmodal from "./Accountmodal"; 
+import Accountmodal from "./Accountmodal";
 
 const Invoicemodal = ({ onClose }: { onClose: () => void }) => {
-  const [showAccountModal, setShowAccountModal] = useState(false); 
+  const [showAccountModal, setShowAccountModal] = useState(false);
 
   const handleAccountDetailsClick = () => {
     setShowAccountModal(true);
@@ -14,43 +14,51 @@ const Invoicemodal = ({ onClose }: { onClose: () => void }) => {
   return (
     <>
       {showAccountModal ? (
-   
         <Accountmodal />
       ) : (
-      
         <div className="invoice-background">
-          <div className="invoicewrapper">
-            <div className="invoice-text">
+          <section className="invoicewrapper">
+            <header className="invoice-text">
               <h3 className="payinv1">Payment Invoice</h3>
-              <IoIosCloseCircleOutline className="closer" onClick={onClose} /> {/* Close button */}
-            </div>
-            <div className="subhead">
-              To validate and confirm your offline payment, kindly upload the bank receipt.
-            </div>
+              <IoIosCloseCircleOutline
+                className="closer"
+                onClick={onClose}
+              />{" "}
+              {/* Close button */}
+            </header>
+            <p className="subhead">
+              To validate and confirm your offline payment, kindly upload the
+              bank receipt.
+            </p>
 
             <div className="display-invoice">
-              <div className="invoice-texts">
+              <article className="invoice-texts">
                 <MdOutlineContentCopy className="copy" />
                 <div>
-                  <h4 className="invnotsame">60% First Installment Invoice Code</h4>
+                  <h4 className="invnotsame">
+                    60% First Installment Invoice Code
+                  </h4>
                   <div className="invnotsame2">aSfDuebTUDKyxYz</div>
                 </div>
-              </div>
+              </article>
 
-              <div className="invoice">
+              <article className="invoice">
                 <MdOutlineContentCopy className="copy" />
                 <div>
                   <h4 className="invnotsame">Full Payment Invoice Code</h4>
                   <div className="invnotsame2">aSfDuebTUDKyxYz</div>
                 </div>
-              </div>
+              </article>
             </div>
 
-          
-            <button className="dyn-btn" onClick={handleAccountDetailsClick}>
+            <button
+              type="button"
+              className="dyn-btn"
+              onClick={handleAccountDetailsClick}
+            >
               Get Account Details
             </button>
-          </div>
+          </section>
         </div>
       )}
     </>

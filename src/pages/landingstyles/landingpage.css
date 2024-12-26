@@ -4,9 +4,6 @@
   align-items: center;
   padding: 150px 0px;
 }
-.landingPagewrapper {
-  padding-bottom: 20px;
-}
 .landingptntheader {
   font-family: "Avenir LT Pro";
   font-size: 46px;
@@ -92,7 +89,7 @@
 }
 .group6 {
   position: relative;
-  top: 45%;
+  top: 95%;
 }
 .progress {
   position: relative;
@@ -166,7 +163,7 @@
 }
 /* pathway component */
 .pathwaywrapper {
-  padding: 50px 100px;
+  padding: 30px 100px;
 }
 .pathwaytxt {
   color: #596275;
@@ -191,13 +188,14 @@
   align-items: center;
   justify-content: center;
   height: 115px;
-  gap: 24px;
+  margin-bottom: 15px;
 }
 .cardscalled {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
   gap: 35px;
+  margin-bottom: 30px;
 }
 .testinfcards {
   display: grid;
@@ -284,22 +282,28 @@
 }
 .pastfloate1 {
   position: absolute;
-  top: 552%;
+  top: 542%;
   left: 55%;
 }
 .pastfloate2 {
   position: absolute;
-  top: 570%;
+  top: 562%;
   left: 87%;
 }
 .pastfloate0 {
   position: absolute;
+  top: 613%;
+  left: 39%;
+}
+.pastfloate001 {
+  position: absolute;
   top: 622%;
   left: 39%;
+  border: 1px solid red;
 }
 .pastfloate5 {
   position: absolute;
-  top: 602%;
+  top: 593%;
   left: 8%;
 }
 /* ---testimony---  */
@@ -411,7 +415,7 @@
 .gridcohort2 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .appltxt {
   font-family: "Avenir LT Pro";

@@ -5,48 +5,55 @@ import eclipse from "../../assets/images/Ellipse 6.png";
 import together from "../../assets/images/_MG_1398 2.png";
 const Past = () => {
   return (
-    <div className="pastwrapper">
-      <div className="pastit">Meet Our Past Interns</div>
+    <section className="pastwrapper">
+      <h2 className="pastit">Meet Our Past Interns</h2>
 
       <div className="pastptn1">
+        <figure>
+          <img src={gcpic1} alt="Past intern profile" />
+        </figure>
         <div>
-          <img src={gcpic1} alt="" />
-        </div>
-        <div>
-          <div className="pastfloate1">
-            <img src={groupseven} alt="" className="pastfloate1" />
-          </div>
-          <div className="pasttxext">
-            We believe that Excellence is a culture and we are committed to a
-            philosophy of consistent Improvement in everything we do, we are
-            Passionate and Candid we trust in the power of Collaboration.
-          </div>
-          <div>
-            <img src={eclipse} alt="" className="pastfloate2" />
-          </div>
+          <figure className="pastfloate1">
+            <img
+              src={groupseven}
+              alt="Group of past interns"
+              className="pastfloate1"
+            />
+          </figure>
+          <p className="pasttxext">
+            We believe that excellence is a culture and we are committed to a
+            philosophy of consistent improvement in everything we do. We are
+            passionate and candid; we trust in the power of collaboration.
+          </p>
+          <figure>
+            <img src={eclipse} alt="Eclipse graphic" className="pastfloate2" />
+          </figure>
         </div>
       </div>
 
-      {/* ------   */}
       <div className="pastptn1">
-        <div className="pasttxext">
-          We believe that Excellence is a culture and we are committed to a
-          philosophy of consistent Improvement in everything we do, we are
-          Passionate and Candid we trust in the power of Collaboration.
-        </div>
+        <p className="pasttxext">
+          We believe that every problem has a solution and we are committed to a
+          live of constant research to help people and business reach their
+          maximum potential, one step at a time.
+        </p>
         <div>
-          <div className="pastfloate13">
-            <img src={groupseven} alt="" className="pastfloate5" />
-          </div>
-          <div>
-            <img src={eclipse} alt="" className="pastfloate0" />
-          </div>
-          <div>
-            <img src={together} alt="" />
-          </div>
+          <figure className="pastfloate13">
+            <img
+              src={groupseven}
+              alt="Group of past interns"
+              className="pastfloate5"
+            />
+          </figure>
+          <figure>
+            <img src={eclipse} alt="Eclipse graphic" className="pastfloate0" />
+          </figure>
+          <figure>
+            <img src={together} alt="Together graphic" />
+          </figure>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
