@@ -7,29 +7,39 @@ import "../landingstyles/landingpage.css";
 
 const Pathways = () => {
   return (
-    <div className="pathwaywrapper">
+    <section className="pathwaywrapper">
       <div className="pathway">
         <h2 className="pathwayheader" id="pathways">
           Program Pathway
         </h2>
-        <div className="pathwaytxt">
+        <p className="pathwaytxt">
           This program is designed to provide you with in-depth knowledge in any
           of these pathways as we aim to equip you with the necessary skills to
           excel in the tech space.
-        </div>
-      </div>{" "}
-      <br />
-      <div className="cardscalled">
-        <Productdesigncards />
-        <FrontEndCards />
-        <BackEndCards />
-      </div>{" "}
-      <br /> <br />
-      <div className="testinfcards">
-        <DataAnalysis />
-        <QualityAssurance />
+        </p>
       </div>
-    </div>
+
+      <div className="cardscalled">
+        <article>
+          <Productdesigncards />
+        </article>
+        <article>
+          <FrontEndCards />
+        </article>
+        <article>
+          <BackEndCards />
+        </article>
+      </div>
+
+      <div className="testinfcards">
+        <article>
+          <DataAnalysis />
+        </article>
+        <article>
+          <QualityAssurance />
+        </article>
+      </div>
+    </section>
   );
 };
 

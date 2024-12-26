@@ -97,11 +97,17 @@
   font-size: 18px;
   font-weight: 500;
 }
+.footerquicklinks33{
+  color: #273043;
+  font-family: "Avenir LT Pro";
+  font-size: 18px;
+  font-weight: 500;
+}
 .nav_pathslinkfollow {
   display: flex;
   gap: 19px;
   color: #596275;
-  margin-top: 50px;
+  margin-top: 37px;
 }
 .telllink {
   all: unset;

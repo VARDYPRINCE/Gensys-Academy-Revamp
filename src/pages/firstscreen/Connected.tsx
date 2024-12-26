@@ -30,17 +30,48 @@ const Connected: React.FC = () => {
   };
 
   return (
-    <div className="subscription-container">
-      <div className="connected">
-        <div className="connect">Stay Connected</div>
-        <div className="connect2">
-          Join our mailing list to receive information about our work and new
-          learning opportunities.
-        </div>
-      </div>
-      <form onSubmit={handleSubmit} className="subscription-form">
+    // <div className="subscription-container">
+    //   <div className="connected">
+    //     <div className="connect">Stay Connected</div>
+    //     <div className="connect2">
+    //       Join our mailing list to receive information about our work and new
+    //       learning opportunities.
+    //     </div>
+    //   </div>
+    //   <form onSubmit={handleSubmit} className="subscription-form">
+    //     <input
+    //       type="email"
+    //       placeholder="Enter your email"
+    //       value={email}
+    //       onChange={handleEmailChange}
+    //       required
+    //       className="subform"
+    //     />
+    //     <button type="submit" className="subscribebtn">
+    //       Subscribe
+    //     </button>
+    //   </form>
+
+    //   {error && <p className="error-message">{error}</p>}
+
+    //   {success && <p className="success-message">Thank you for subscribing!</p>}
+    // </div>
+
+    <section className="subscription-container">
+      <h2 className="connect">Stay Connected</h2>
+      <p className="connect2">
+        Join our mailing list to receive information about our work and new
+        learning opportunities.
+      </p>
+
+      <form
+        onSubmit={handleSubmit}
+        className="subscription-form"
+        aria-label="Subscription Form"
+      >
         <input
           type="email"
+          id="email"
           placeholder="Enter your email"
           value={email}
           onChange={handleEmailChange}
@@ -53,9 +84,8 @@ const Connected: React.FC = () => {
       </form>
 
       {error && <p className="error-message">{error}</p>}
-
       {success && <p className="success-message">Thank you for subscribing!</p>}
-    </div>
+    </section>
   );
 };
 

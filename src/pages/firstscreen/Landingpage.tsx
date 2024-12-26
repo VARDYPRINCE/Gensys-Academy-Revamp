@@ -1,4 +1,4 @@
-import { useState } from "react"; 
+import { useState } from "react";
 import "../landingstyles/landingpage.css";
 import Navbar from "../../components/navbar/Navbar";
 import group3 from "../../assets/images/Group 3.png";
@@ -13,66 +13,82 @@ import { Link } from "react-router-dom";
 import OfflineModal from "../../components/modals/OfflineModal";
 
 const Landingpage = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setIsModalOpen(true); 
-  const closeModal = () => setIsModalOpen(false); 
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="landingPagewrapper">
-      <div className="imported">
-        <Navbar />
-      </div>
-
-      <div className="landingptn">
-        <div className="landingptn1">
+    <>
+      <Navbar />
+      <main className="landingptn">
+        <section className="landingptn1">
           <h1 className="landingptntheader">
             Get Skilled To Excel, Begin Your Tech Journey.
           </h1>
-          <div className="landingptnttxt">
-            Interested in getting comprehensive, hands-on-training in software
+          <p className="landingptnttxt">
+            Interested in getting comprehensive, hands-on training in software
             development career? Then Genesys Academy is your best bet to gain
             the skills you need to excel!
-          </div>
-          <br />
+          </p>
           <div className="landingbtn">
             <Link to="/personaldata">
               <button className="landingbtn-1">Begin Application</button>
             </Link>
-            <button className="landingbtn-2" onClick={openModal}>Validate Offline Payment</button>
+            <button className="landingbtn-2" onClick={openModal}>
+              Validate Offline Payment
+            </button>
           </div>
-          <div>
-            <img src={group3} alt="" className="group3" />
-          </div>
-        </div>
+          <figure>
+            <img src={group3} alt="Group illustration" className="group3" />
+          </figure>
+        </section>
 
-        <div className="landingptn2">
+        <section className="landingptn2">
           <div className="eclipse">
-            <img src={eclipse} alt="" className="eclipse" />
+            <figure>
+              <img src={eclipse} alt="Eclipse graphic" className="eclipse" />
+            </figure>
           </div>
           <div>
-            <img src={oj} alt="" className="oj" />
+            <figure>
+              <img src={oj} alt="OJ graphic" className="oj" />
+            </figure>
           </div>
           <div>
-            <img src={bella} alt="" className="bella" />
+            <figure>
+              <img src={bella} alt="Bella graphic" className="bella" />
+            </figure>
           </div>
           <div className="group10">
-            <img src={group10} alt="" className="group10" />
+            <figure>
+              <img src={group10} alt="Group 10 graphic" className="group10" />
+            </figure>
           </div>
           <div>
-            <img src={Mrcharles} alt="" className="mrcharles" />
+            <figure>
+              <img
+                src={Mrcharles}
+                alt="Mr. Charles graphic"
+                className="mrcharles"
+              />
+            </figure>
           </div>
           <div>
-            <img src={progress} alt="" className="progress" />
+            <figure>
+              <img src={progress} alt="Progress graphic" className="progress" />
+            </figure>
           </div>
           <div className="group6">
-            <img src={group6} alt="" className="group6" />
+            <figure>
+              <img src={group6} alt="Group 6 graphic" className="group6" />
+            </figure>
           </div>
-        </div>
-      </div>
+        </section>
 
-      {isModalOpen && <OfflineModal closeModal={closeModal} />}
-    </div>
+        {isModalOpen && <OfflineModal closeModal={closeModal} />}
+      </main>
+    </>
   );
 };
 
