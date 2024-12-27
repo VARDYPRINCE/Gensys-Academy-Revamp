@@ -7,17 +7,19 @@ import { Link } from "react-router-dom";
 const FrontEndCards = () => {
   return (
     <div className="cardswrapper">
-      <div className="cardesignptn">
-        <img src={frontend} alt="" />
+      <article className="cardesignptn">
+        <figure>
+          <img src={frontend} alt="" />
+        </figure>
 
         <div className="cardcontenz">
-          <div className="cardstitle">Fron End Development</div>
-          <div className="cardstxts">
+          <h2 className="cardstitle">Fron End Development</h2>
+          <p className="cardstxts">
             Learn JavaScript design pattern and how to use React to develop
             interactive websites and web apps.
-          </div>
+          </p>
           <div className="cardscurriculum">
-            <Link to="/frontend"  className="productdesign1">
+            <Link to="/frontend" className="productdesign1">
               <button className="cardscurriculumbtn">
                 {" "}
                 View Curriculum{" "}
@@ -29,7 +31,7 @@ const FrontEndCards = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 };

@@ -7,30 +7,30 @@ import { Link } from "react-router-dom";
 const BackEndCards = () => {
   return (
     <div className="cardswrapper">
-      <div className="cardesignptn">
-        <img src={backend} alt="" />
+      <article className="cardesignptn">
+        <figure>
+        <img src={backend} alt="Back End Development Logo" />
+        </figure>
 
         <div className="cardcontenz">
-          <div className="cardstitle">Back End Development</div>
-          <div className="cardstxts">
+          <h2 className="cardstitle">Back End Development</h2>
+          <p className="cardstxts">
             Get educated on JavaScript advanced topics: RegExp, design patterns,
-            OOP and APIs.
-          </div>
+            OOP, and APIs.
+          </p>
           <div className="cardscurriculum">
-            <Link to="backend"  className="productdesign1">
-            
-            <button className="cardscurriculumbtn">
-              {" "}
-              View Curriculum{" "}
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="arrowiconforcards"
-              />
-            </button>
+            <Link to="backend" className="productdesign1">
+              <button className="cardscurriculumbtn">
+                View Curriculum{" "}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="arrowiconforcards"
+                />
+              </button>
             </Link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 };

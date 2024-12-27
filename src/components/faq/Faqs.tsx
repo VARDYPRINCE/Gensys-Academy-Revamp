@@ -46,18 +46,18 @@ const Faqs = () => {
 
   return (
     <div className="faq-wrapper">
-      <div>
-        <div className="faq-header1">Frequently Asked Questions (FAQs)</div>
-        <div className="faq-header2">
+      <header>
+        <h1 className="faq-header1">Frequently Asked Questions (FAQs)</h1>
+        <p className="faq-header2">
           Necessary questions answered. Everything you need to know about
           Genesys Academy.
-        </div>
-      </div>
+        </p>
+      </header>
 
-      <div className="wrap-faq">
+      <section className="wrap-faq">
         <div className="faq-container">
           {faqItems.map((item, index) => (
-            <div key={index} className="faq-item">
+            <article key={index} className="faq-item">
               <div className="faq-question" onClick={() => toggleFAQ(index)}>
                 <span className="faq-question-text">{item.question}</span>
                 <span
@@ -71,10 +71,10 @@ const Faqs = () => {
               {activeIndex === index && (
                 <div className="faq-answer">{item.answer}</div>
               )}
-            </div>
+            </article>
           ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };

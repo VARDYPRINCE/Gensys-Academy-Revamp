@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.nav_paths, li {
+.nav_paths {
   display: flex;
   gap: 30px;
   color: #596275;
@@ -23,6 +23,10 @@
   font-weight: 400;
   font-family: "Avenir LT Pro";
   text-decoration: none;
+}
+#navpaths{
+  text-decoration: none;
+  list-style: none;
 }
 .nav {
   display: flex;
