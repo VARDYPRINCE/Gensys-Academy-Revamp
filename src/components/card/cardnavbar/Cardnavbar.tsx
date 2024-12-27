@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 
 const Cardnavbar = () => {
   return (
-    <div className="cardnavbarnavwrapper">
+    <nav className="cardnavbarnavwrapper">
       <div className="cardnavbarnavbar">
         <div className="cardnavbarnav">
-          <img src={gensyslogo} alt="logo" />
+          <img src={gensyslogo} alt="Gensys Logo" />
           <span className="cardnavbarln"></span>
-          <div className="cardnavbarnav_academy">Academy</div>
+          <h1 className="cardnavbarnav_academy">Academy</h1>
         </div>
         <div className="cardnavbarnav_btn">
           <Link to="/personaldata" className="navroute">
@@ -23,7 +23,7 @@ const Cardnavbar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

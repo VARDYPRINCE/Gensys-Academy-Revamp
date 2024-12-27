@@ -7,15 +7,17 @@ import { Link } from "react-router-dom";
 const Productdesigncards = () => {
   return (
     <div className="cardswrapper">
-      <div className="cardesignptn">
-        <img src={productdesign} alt="" />
+      <article className="cardesignptn">
+        <figure>
+          <img src={productdesign} alt="" />
+        </figure>
 
         <div className="cardcontenz">
-          <div className="cardstitle">Product Design</div>
-          <div className="cardstxts">
+          <h2 className="cardstitle">Product Design</h2>
+          <p className="cardstxts">
             Learn to build brands and transform ideas into digital solutions
             with good marketing strategies.
-          </div>
+          </p>
           <div className="cardscurriculum">
             <Link to="/productdesign" className="productdesign1">
               <button className="cardscurriculumbtn">
@@ -29,7 +31,7 @@ const Productdesigncards = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 };

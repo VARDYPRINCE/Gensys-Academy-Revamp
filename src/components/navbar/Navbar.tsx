@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           <span className="ln"></span>
           <span className="nav_academy">Academy</span>
         </div>
-        <ul className="nav_paths">
+        <ul className="nav_paths" id="navpaths">
           <li>
             <button
               className="navlinktags"

@@ -6,31 +6,32 @@ import { Link } from "react-router-dom";
 
 const QualityAssurance = () => {
   return (
-    <div className="cardswrapper"id="cardcenter">
-      <div className="cardesignptn" >
-        <img src={qualityassurance} alt="" />
+    <div className="cardswrapper" id="cardcenter">
+      <article className="cardesignptn">
+        <figure>
+          <img src={qualityassurance} alt="" />
+        </figure>
 
         <div className="cardcontenz">
-          <div className="cardstitle">Quality Assurance</div>
-          <div className="cardstxts">
+          <h2 className="cardstitle">Quality Assurance</h2>
+          <p className="cardstxts">
             Develop skills in testing methodologies, defect tracking, and
             ensuring industry standard products of top quality.
-          </div>
+          </p>
           <div className="cardscurriculum">
-            <Link to="/qa"  className="productdesign1">
-            
-            <button className="cardscurriculumbtn">
-              {" "}
-              View Curriculum{" "}
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="arrowiconforcards"
-              />
-            </button>
+            <Link to="/qa" className="productdesign1">
+              <button className="cardscurriculumbtn">
+                {" "}
+                View Curriculum{" "}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="arrowiconforcards"
+                />
+              </button>
             </Link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 };

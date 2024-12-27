@@ -12,45 +12,51 @@ import Footer from "../../footer/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Productdesigninfo = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
-  const handleBackClick = () => 
-    navigate(-1);
+  const handleBackClick = () => navigate(-1);
   return (
     <div className="productdesigninfowrapper">
-      <div className="pwow">
+      <header className="pwow">
         <Cardnavbar />
-      </div>
-      <div className="pdchild">
-        <button className="startpersonal"  onClick={handleBackClick}>
+      </header>
+
+      <nav className="pdchild">
+        <button className="startpersonal" onClick={handleBackClick}>
           <FontAwesomeIcon icon={faArrowLeft} className="farrowleft" />
         </button>
-      </div>
+      </nav>
 
-      <div className="productdesignersinfomation">
-        <div>
-          <img src={pdway} alt="" />
-        </div>
+      <section className="productdesignersinfomation">
+        <figure>
+          <img src={pdway} alt="Product Design Pathway" />
+        </figure>
         <div className="productdesignersinfomation1">
-          <div className="abtpathwayspd">About this pathway</div>
-          <div className="propddesigns">
-            <span className="propddesigns2">Product Design (PD)</span> is the
-            process of creating and developing a physical or digital product
-            from concept to completion ensuring they meet the users goals and
-            business goals. This track encompasses a wide range of skills,
-            including user research, user interface (UI) design, interaction
-            design, prototyping, and usability testing.
-          </div>
-          <div className="propddesigns">
-            Product designers collaborate closely with cross-functional teams,
-            from developers to marketers, to create innovative and user-friendly
-            products. In essence, product design is about solving problems,
-            empathizing with users, and translating their needs into elegant,
-            intuitive, and visually appealing solutions.
-          </div>
+          <h2 className="abtpathwayspd">About this pathway</h2>
+          <article className="propddesigns">
+            <h3>Product Design (PD)</h3>
+            <p>
+              Product Design (PD) is the process of creating and developing a
+              physical or digital product from concept to completion, ensuring
+              they meet user goals and business objectives. This track
+              encompasses a wide range of skills, including user research, user
+              interface (UI) design, interaction design, prototyping, and
+              usability testing.
+            </p>
+          </article>
+          <article className="propddesigns">
+            <p>
+              Product designers collaborate closely with cross-functional teams,
+              from developers to marketers, to create innovative and
+              user-friendly products. In essence, product design is about
+              solving problems, empathizing with users, and translating their
+              needs into elegant, intuitive, and visually appealing solutions.
+            </p>
+          </article>
         </div>
-      </div>
-      <div className="pdchildsecond">
+      </section>
+
+      <section className="pdchildsecond">
         <div className="learn-section">
           <h2 className="wylearn">What you'll learn</h2>
           <ul className="dottedwyl" id="widthlearn">
@@ -85,23 +91,24 @@ const Productdesigninfo = () => {
           <ul className="dottedwyl">
             <li className="li-section">A fully functional laptop</li>
             <li className="li-section">A working mobile phone</li>
-            <li className="li-section">A learning attitude; and</li>
+            <li className="li-section">A learning attitude</li>
             <li className="li-section">A desire to achieve excellence</li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <div className="curriculumwrapperptn">
+      <section className="curriculumwrapperptn">
         <div className="currydesign">
-          <img src={design} alt="" />
+          <img src={design} alt="Curriculum Design" />
         </div>
-        <div className="curryheaders">
-          <div className="currycuryy">Curriculum</div>
-          <div className="currycuryy2">
+        <header className="curryheaders">
+          <h2 className="currycuryy">Curriculum</h2>
+          <p>
             This program is designed to provide you with in-depth knowledge on
             the following:
-          </div>
-        </div>
+          </p>
+        </header>
+
         <div className="curryinfos">
           <div className="curriculum-section">
             <div className="curriculum-lists">
@@ -117,6 +124,7 @@ const Productdesigninfo = () => {
                 <li className="deccurry">UI Design Elements and Components</li>
               </ul>
             </div>
+
             <div>
               <ul className="currydec">
                 <li className="deccurry">UI Design Patterns</li>
@@ -128,27 +136,27 @@ const Productdesigninfo = () => {
                 </li>
               </ul>
             </div>
-            <div className="curriculum-image">
-              <div className="circle-design">
-                <img src={pddesigns} alt="" />
-              </div>
-            </div>
+
+            <figure className="curriculum-image">
+              <img src={pddesigns} alt="Curriculum Designs" />
+            </figure>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="otherpathwayspds">
-        <div className="otherpathwayspds1">Others Learning Pathways</div>
+      <aside className="otherpathwayspds">
+        <h2>Other Learning Pathways</h2>
 
         <div className="calledimportescards">
           <FrontEndCards />
           <DataAnalysis />
           <QualityAssurance />
         </div>
-      </div>
-      <div className="calledimportescards2">
+      </aside>
+
+      <footer className="calledimportescards2">
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 };

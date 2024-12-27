@@ -12,58 +12,63 @@ import Productdesigncards from "../productdesign/Productdesigncards";
 import { useNavigate } from "react-router-dom";
 
 const FrontEndInformation = () => {
+  const navigate = useNavigate();
 
-  const navigate = useNavigate(); 
-
-  const handleBackClick = () => 
-    navigate(-1);
+  const handleBackClick = () => navigate(-1);
   return (
     <div className="productdesigninfowrapper">
-      <div className="pwow">
+      <header className="pwow">
         <Cardnavbar />
-      </div>
-      <div className="pdchild">
-        <button className="startpersonal"  onClick={handleBackClick}>
+      </header>
+
+      <nav className="pdchild">
+        <button className="startpersonal" onClick={handleBackClick}>
           <FontAwesomeIcon icon={faArrowLeft} className="farrowleft" />
         </button>
-      </div>
+      </nav>
 
-      <div className="productdesignersinfomation">
-        <div>
-          <img src={pdway} alt="" />
-        </div>
+      <section className="productdesignersinfomation">
+        <figure>
+          <img src={pdway} alt="Frontend Development Pathway" />
+        </figure>
         <div className="productdesignersinfomation1">
-          <div className="abtpathwayspd">About this pathway</div>
-          <div className="propddesigns">
-            <span className="propddesigns2">Frontend Development (FE)</span>{" "}
-            involves the process of creating and implementing the User Interface
-            (UI) and User Experience (UX) for online and mobile apps is referred
-            to as Frontend Development. This area of development is concerned
-            with producing aesthetically beautiful, engaging, and user-friendly
-            designs that meet end-user requirements. To create user-friendly and
-            captivating interfaces, Frontend Developers will use frameworks and
-            libraries like React together with programming languages like HTML,
-            CSS, and JavaScript. To achieve smooth interaction between the user
-            interface and the underlying application logic, these developers
-            collaborate closely with Product Designers and Backend Developers.
-          </div>
-          <div className="propddesigns">
-            Product designers collaborate closely with cross-functional teams,
-            from developers to marketers, to create innovative and user-friendly
-            products. In essence, product design is about solving problems,
-            empathizing with users, and translating their needs into elegant,
-            intuitive, and visually appealing solutions.
-          </div>
+          <h2 className="abtpathwayspd">About this pathway</h2>
+          <article className="propddesigns">
+            <h3>Frontend Development (FE)</h3>
+            <p>
+              Frontend Development involves the process of creating and
+              implementing the User Interface (UI) and User Experience (UX) for
+              online and mobile apps. This area of development focuses on
+              producing aesthetically pleasing, engaging, and user-friendly
+              designs that meet end-user requirements. Frontend Developers use
+              frameworks and libraries like React along with programming
+              languages such as HTML, CSS, and JavaScript to create
+              user-friendly interfaces. They collaborate closely with Product
+              Designers and Backend Developers to ensure smooth interaction
+              between the user interface and the underlying application logic.
+            </p>
+          </article>
+          <article className="propddesigns">
+            <h3>Product Design Collaboration</h3>
+            <p>
+              Product designers collaborate closely with cross-functional teams,
+              from developers to marketers, to create innovative and
+              user-friendly products. In essence, product design is about
+              solving problems, empathizing with users, and translating their
+              needs into elegant, intuitive, and visually appealing solutions.
+            </p>
+          </article>
         </div>
-      </div>
-      <div className="pdchildsecond">
+      </section>
+
+      <section className="pdchildsecond">
         <div className="learn-section">
           <h2 className="wylearn">What you'll learn</h2>
           <ul className="dottedwyl" id="widthlearn">
             <li className="li-section">Introduction to Programming</li>
             <li className="li-section">
-              HTML, CSS, JavaScript: You'll master the fundamental building
-              blocks of web development
+              HTML, CSS, JavaScript: Master the fundamental building blocks of
+              web development.
             </li>
             <li className="li-section">
               Responsive Design: Learn to create web applications that adapt to
@@ -78,8 +83,8 @@ const FrontEndInformation = () => {
               interfaces for a great user experience.
             </li>
             <li className="li-section">
-              Web Performance: Optimise web applications for speed and
-              responsiveness
+              Web Performance: Optimize web applications for speed and
+              responsiveness.
             </li>
           </ul>
         </div>
@@ -89,23 +94,24 @@ const FrontEndInformation = () => {
           <ul className="dottedwyl">
             <li className="li-section">A fully functional laptop</li>
             <li className="li-section">A working mobile phone</li>
-            <li className="li-section">A learning attitude; and</li>
+            <li className="li-section">A learning attitude</li>
             <li className="li-section">A desire to achieve excellence</li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <div className="curriculumwrapperptn">
+      <section className="curriculumwrapperptn">
         <div className="currydesign">
-          <img src={design} alt="" />
+          <img src={design} alt="Curriculum Design" />
         </div>
-        <div className="curryheaders">
-          <div className="currycuryy">Curriculum</div>
-          <div className="currycuryy2">
+        <header className="curryheaders">
+          <h2 className="currycuryy">Curriculum</h2>
+          <p>
             This program is designed to provide you with in-depth knowledge on
             the following:
-          </div>
-        </div>
+          </p>
+        </header>
+
         <div className="curryinfos">
           <div className="curriculum-section">
             <div className="curriculum-lists">
@@ -117,10 +123,11 @@ const FrontEndInformation = () => {
                 <li className="deccurry">Git & Version Control</li>
                 <li className="deccurry">JavaScript Fundamentals</li>
                 <li className="deccurry">
-                  Data structures - Arrays and Objects
+                  Data Structures - Arrays and Objects
                 </li>
               </ul>
             </div>
+
             <div>
               <ul className="currydec">
                 <li className="deccurry">HTML & CSS Fundamentals</li>
@@ -130,27 +137,29 @@ const FrontEndInformation = () => {
                 <li className="deccurry">Developing Web Apps with React</li>
               </ul>
             </div>
-            <div className="curriculum-image">
-              <div className="circle-design">
-                <img src={pddesigns} alt="" />
-              </div>
-            </div>
+
+            <figure className="curriculum-image">
+              <img src={pddesigns} alt="Curriculum Designs" />
+            </figure>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="otherpathwayspds">
-        <div className="otherpathwayspds1">Others Learning Pathways</div>
+      <aside className="otherpathwayspds">
+        <h2>Other Learning Pathways</h2>
 
         <div className="calledimportescards">
+          {/* Assuming these components render cards for different pathways */}
           <Productdesigncards />
           <DataAnalysis />
           <QualityAssurance />
         </div>
-      </div>
-      <div className="calledimportescards2">
+      </aside>
+
+      {/* Footer Section */}
+      <footer className="calledimportescards2">
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 };

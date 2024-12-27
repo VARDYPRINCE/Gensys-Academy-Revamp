@@ -27,12 +27,12 @@ const Backendinfo = () => {
       </div>
 
       <div className="productdesignersinfomation">
-        <div>
+        <figure>
           <img src={pdway} alt="" />
-        </div>
+        </figure>
         <div className="productdesignersinfomation1">
-          <div className="abtpathwayspd">About this pathway</div>
-          <div className="propddesigns">
+          <h1 className="abtpathwayspd">About this pathway</h1>
+          <p className="propddesigns">
             <span className="propddesigns2">Backend Development (BE)</span> in
             software engineering is the art of building and maintaining the
             server-side of applications. It involves mastering programming
@@ -41,14 +41,14 @@ const Backendinfo = () => {
             retrieval, API design, and ensuring application security and
             scalability. They work behind the scenes, making them essential for
             any software or web application's functionality and performance.
-          </div>
-          <div className="propddesigns">
+          </p>
+          <p className="propddesigns">
             Product designers collaborate closely with cross-functional teams,
             from developers to marketers, to create innovative and user-friendly
             products. In essence, product design is about solving problems,
             empathizing with users, and translating their needs into elegant,
             intuitive, and visually appealing solutions.
-          </div>
+          </p>
         </div>
       </div>
       <div className="pdchildsecond" id="newbebackcolor">
@@ -90,15 +90,15 @@ const Backendinfo = () => {
       </div>
 
       <div className="curriculumwrapperptn">
-        <div className="currydesign">
+        <figure className="currydesign">
           <img src={design} alt="" />
-        </div>
+        </figure>
         <div className="curryheaders">
-          <div className="currycuryy">Curriculum</div>
-          <div className="currycuryy2">
+          <h1 className="currycuryy">Curriculum</h1>
+          <p className="currycuryy2">
             This program is designed to provide you with in-depth knowledge on
             the following:
-          </div>
+          </p>
         </div>
         <div className="curryinfos">
           <div className="curriculum-section">
@@ -135,16 +135,16 @@ const Backendinfo = () => {
               </ul>
             </div>
             <div className="curriculum-image">
-              <div className="circle-design">
+              <figure className="circle-design">
                 <img src={pddesigns} alt="" />
-              </div>
+              </figure>
             </div>
           </div>
         </div>
       </div>
 
       <div className="otherpathwayspds">
-        <div className="otherpathwayspds1">Others Learning Pathways</div>
+        <h1 className="otherpathwayspds1">Others Learning Pathways</h1>
 
         <div className="calledimportescards">
           <FrontEndCards />
